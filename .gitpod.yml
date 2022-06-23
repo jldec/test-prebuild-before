@@ -1,10 +1,6 @@
 # .gitpod.yml
 tasks:
-  - name: Install dependencies
-    before: |
-      echo `gp url` >> before.txt
+  - init: |
       npm install
-  - name: In workspace
     command: |
-      # npm start
-      echo "Hello before-task"
+      npm start
