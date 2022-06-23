@@ -6,8 +6,8 @@
 # .gitpod.yml
 tasks:
   - init: |
+      sleep 30s
       npm install
     command: |
       npm start
-
 ```
